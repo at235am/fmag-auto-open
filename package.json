@@ -1,0 +1,16 @@
+{
+  "name": "aimgods-roller",
+  "version": "1.0.0",
+  "description": "automate the rolling of the final mouse lottery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "at235am",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  }
+}
