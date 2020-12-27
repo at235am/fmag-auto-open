@@ -11,10 +11,12 @@ const start = async () => {
   let driver = await new Builder().forBrowser("firefox").build();
 
   await driver.get("https://aimgods.finalmouse.com/");
-  await driver.findElement(By.id("username")).sendKeys(process.env.USERNAME);
+  await driver
+    .findElement(By.id("username"))
+    .sendKeys(process.env.FINALMOUSE_USERNAME);
   await driver
     .findElement(By.id("password"))
-    .sendKeys(process.env.PASSWORD, Key.RETURN);
+    .sendKeys(process.env.FINALMOUSE_PASSWORD, Key.RETURN);
 
   await sleep(5000);
 
